@@ -38,5 +38,5 @@ cnn.add(Dense(128,activation="relu"))
 cnn.add(Dense(2,activation="softmax"))
 cnn.compile(optimizer="adam",loss="sparse_categorical_crossentropy",metrics=["acc"])
 cnn.fit_generator(train_data,validation_data=test_data,epochs=10)
-import numpy as np
+
 
